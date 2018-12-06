@@ -98,3 +98,30 @@ body {
 .remove {
   background-color: #d9534f;
 }
+
+.slide-enter {
+    transform: translateX(-100%)
+}
+
+.slide-enter.slide-enter-active {
+    transform: translateX(0);
+    transition: transform .5s ease-out;
+}
+
+.slide-leave {
+    transform: translateX(0)
+}
+
+.slide-leave.slide-leave-active {
+    transform: translateX(-100%);
+    transition: transform .5s ease-out;
+}
+
+.slide-appear {
+   opacity: 0;
+}
+
+.slide-appear.slide-appear-active {
+    opacity: 1;
+    transition: all .5s ease-out;
+}
